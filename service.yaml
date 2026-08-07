@@ -1,0 +1,10 @@
+name: immunizations-service
+port: 8306
+lang: python
+description: "immunizations-service \u2014 domain: ehr"
+http_deps:
+- patients-service
+- audit-log-service
+publishes:
+- audit.event
+subscribes: []
